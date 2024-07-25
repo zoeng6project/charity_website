@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/bee_icon.svg">
+  <title>Bee_Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style_location.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+ <!-- Include the header -->
+ <div id="header"></div>
+
+  <main>
+    <div class = "search-wrapper">
+      <label for="search">Search Location  </label>
+      <input type="search" id="search">
+      <img src="img/location_icon.svg" alt="Location_Logo" width="50" height="50">
+    </div>
+
+    <div class="location-filter">
+      <label for="location-select">Filter by City </label>
+      <select id="location-select">
+        <option value="all">All</option>
+        <option value="toronto">Toronto</option>
+        <option value="vancouver">Vancouver</option>
+        <option value="calgary">Calgary</option>
+      </select>
+    </div>
+
+    <div class="location-cards">
+      <div class="card toronto">
+        <div class="header"><strong>Yonge & Dundas</strong></div>
+        <div class="body">100 Yonge Street, Toronto, ON M5B 1V7 <br> Phone: (416) 555-1234</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>Bloor & Spadina</strong></div>
+        <div class="body">455 Spadina Avenue, Toronto, ON M5S 2C7 <br>Phone: (416) 555-2345</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>King & Bay</strong></div>
+        <div class="body">33 King Street East, Toronto, ON M5H 2Y4<br> Phone: (416) 555-3456</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>Queen & University</strong></div>
+        <div class="body">130 University Avenue, Toronto, ON M5H 2N2<br>Phone: (416) 555-4567</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>Eglinton & Yonge</strong></div>
+        <div class="body">2500 Yonge Street, Toronto, ON M4P 1E4<br> Phone: (416) 555-5678</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>College & Bathurst</strong></div>
+        <div class="body">840 College Street, Toronto, ON M5T 1P5<br>Phone: (416) 555-6789</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>Sheppard & Younge</strong></div>
+        <div class="body">4950 Yonge Street, Toronto, ON M2N 6S6 <br> Phone: (416) 555-7890</div>
+      </div>
+      <div class="card toronto">
+        <div class="header"><strong>Front & Church</strong></div>
+        <div class="body">11 Front Street East, Toronto, ON M5E 1M6<br> Phone: (416) 555-8901</div>
+      </div>
+      <div class="card vancouver">
+        <div class="header"><strong>Burrard & West Georgia </strong></div>
+        <div class="body">1055 Canada Place, Vancouver, BC V6C 0C3<br> Phone: (604) 691-1999</div>
+      </div>
+      <div class="card vancouver">
+        <div class="header"><strong>Granville & Dunsmuir</strong></div>
+        <div class="body">1111 West Georgia Street, Vancouver, BC V6E 4M3<br>Phone: (604) 682-1991</div>
+      </div>
+      <div class="card vancouver">
+        <div class="header"><strong>Robson & Bute </strong></div>
+        <div class="body">1101 West Hastings Street, Vancouver, BC V6E 2E6<br> Phone: (604) 605-5100</div>
+      </div>
+      <div class="card vancouver">
+        <div class="header"><strong>Seymour & West Pender </strong></div>
+        <div class="body">1300 Robson Street, Vancouver, BC V6E 1C5<br>Phone: (604) 331-7700</div>
+      </div>
+      <div class="card calgary">
+        <div class="header"><strong>4th Street SW & 4th Avenue SW</strong></div>
+        <div class="body">144 4th Avenue SW, Calgary, AB T2P 3N4<br> Phone: (403) 268-8500</div>
+      </div>
+      <div class="card calgary">
+        <div class="header"><strong>1st Street SW & 8th Avenue SW</strong></div>
+        <div class="body">817 1st Street SW, Calgary, AB T2P 1N3<br>Phone: (403) 268-2489</div>
+      </div>
+      <div class="card calgary">
+        <div class="header"><strong>Macleod Trail SE & 9th Avenue SE</strong></div>
+        <div class="body">401 9th Avenue SE, Calgary, AB T2G 0R9<br>Phone: (403) 268-2489</div>
+      </div>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9232338867837!2d-79.38110402286408!3d43.649765471102235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb14eb6fd121%3A0x2317f9ba60e69018!2s100%20Yonge%20St%2C%20Toronto%2C%20ON%20M5C%202W1%2C%20Canada!5e0!3m2!1sen!2shk!4v1721870875016!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+  </main>
+  <!-- Include the footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load the header and footer HTML
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+    // Load the search & filter function
+    const locationSelect = document.getElementById('location-select');
+    const searchInput = document.getElementById('search');
+    const locationCards = document.querySelectorAll('.location-cards .card');
+
+    locationSelect.addEventListener('change', () => {
+      filterCards();
+    });
+
+    searchInput.addEventListener('input', () => {
+      filterCards();
+    });
+
+    function filterCards() {
+      const selectedLocation = locationSelect.value;
+      const searchTerm = searchInput.value.toLowerCase();
+
+      locationCards.forEach(card => {
+        const cardText = card.textContent.toLowerCase();
+        const cardLocation = card.classList.contains(selectedLocation) || selectedLocation === 'all';
+        const cardMatchesSearch = cardText.includes(searchTerm);
+
+        if (cardLocation && cardMatchesSearch) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: #fad02c;
+  z-index: 100; 
+}
+
+.top-bar span {
+  color: #000000;
+}
+
+.top-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.top-bar li {
+  margin: 0px 5px;
+}
+
+.top-bar ul li a img {
+  width: 30%;
+  height: auto;
+}
+
+nav .beekind {
+  font-family: 'Playwrite AT', cursive;
+}
+
+
+nav {
+  position: fixed;
+  top: 45px; 
+  left: 0;
+  right: 0;
+  background: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  z-index: 99; 
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #fad02c;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.logo a:hover {
+  color: #fff;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.donate-button {
+  padding: 10px 20px;
+  background-color: #fad02c;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donate-button:hover {
+  background-color: #20627c;
+  color: white;
+}
+
+.toggle {
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar, nav {
+    position: static;
+  }
+
+  nav {
+    top: 0;
+  }
+
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+
+  .menu.active, .toggle {
+    display: block;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+}

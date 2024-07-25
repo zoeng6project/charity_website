@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Webpage</title>
+    <link rel="stylesheet" href="css/style_service.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body> 
+          <!-- Include the header -->
+          <div id="header"></div>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="grid">
+                <div class="service">
+                    <img src="img/service-1.jpg" alt="Beekeepers at Work">
+                    <div class="service-content">
+                        <h3>Bee Rescue and Relocation</h3>
+                        <p>A team of dedicated beekeepers engaged in the intricate process of managing and maintaining a beehive. Equipped with protective gear, these beekeepers are carefully handling the frames inside a hive box, ensuring the well-being of the bees and the quality of the honey produced. Beekeeping is a crucial service that supports pollination, biodiversity, and the production of natural honey. Our expert beekeeping services include hive management, honey extraction, and ensuring the health of bee colonies.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="img/service-2.jpg" alt="Fresh Honey">
+                    <div class="service-content">
+                        <h3>Honey Production</h3>
+                        <p>A bowl of golden, pure honey being drizzled with a honey dipper, with a honeycomb visible in the background. The rich, amber color and the thick, luscious texture of the honey highlight its purity and quality. Our honey is harvested through sustainable practices, ensuring that it is 100% natural and free from additives. Whether used as a sweetener, in recipes, or for its medicinal properties, our honey offers numerous health benefits. Experience the taste of nature's finest with our premium honey products.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="img/service-3.jpg" alt="Beekeeping Workshops">
+                    <div class="service-content">
+                        <h3>Beekeeping Workshops</h3>
+                        <p>Our Beekeeping Workshops offer hands-on training for individuals of all experience levels interested in beekeeping. Participants will learn the basics of bee biology, hive setup, colony installation, and hive maintenance. The workshops also cover honey extraction and sustainable beekeeping practices, ensuring attendees can manage their own hives effectively. Seasonal tasks, common hive issues, and Q&A sessions with experienced beekeepers are included. These workshops provide the knowledge and skills needed to support honey bee conservation and produce high-quality honey, fostering a community dedicated to protecting these vital pollinators. Join us to embark on a rewarding journey into the world of beekeeping and contribute to environmental sustainability.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="img/service-4.jpeg" alt="Organic Pesticides">
+                    <div class="service-content">
+                        <h3>Organic Pesticides</h3>
+                        <p>Our Organic Pesticides service provides eco-friendly solutions to protect honey bees and other pollinators while managing pests in your garden or farm. Unlike conventional pesticides, our organic options are derived from natural sources and are designed to be non-toxic to bees. They effectively control pests without harming beneficial insects, ensuring a healthy and thriving ecosystem. We offer a range of organic pesticide products and application services, tailored to your specific needs, to promote sustainable agriculture and safeguard the environment. By choosing our organic pesticides, you contribute to the well-being of honey bee populations and the overall health of your plants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>  
+<!-- Include the footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load the header and footer HTML
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+    </script>
+
+</html>

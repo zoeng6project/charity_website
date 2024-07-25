@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AT:ital,wght@0,233;1,233&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body {
+    background-color: #20627c;
+    margin-top: 150px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .heading {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.container .heading h1 {
+    color: #fad02c;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    width: 50%;
+    margin: 0px 25px;
+    transition: 0.4s ease;
+}
+
+.content:hover {
+    transform: translateY(-15px);
+}
+
+.content h2 {
+    font-size: 30px;
+    color: #fad02c;
+}
+
+.content p {
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.content .btn {
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid #fad02c;
+    font-size: 19px;
+    color: #fad02c;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.content .btn::before {
+    position: absolute;
+    content: "";
+    border: 1px solid transparent;
+    left: 0;
+    top: 0;
+    width: 172px;
+    height: 46px;
+    background: #fad02c;
+    z-index: -1;
+    transition: transform 0.7s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.5, 0.4, 0.7);
+    transform: scaleX(0);
+}
+
+.content .btn:hover {
+    color: #20627c;
+}
+
+.content .btn:hover::before {
+    transform: scaleX(1);
+}
+
+.image {
+    width: 35%;
+    transition: 0.4s ease;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image:hover {
+    transform: translateY(-30px);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+div.content-card-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content-card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div.content-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content-card-top-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: ease 0.4s;
+}
+
+div.content-card-top-image img:hover {
+    transform: translateY(-30px);
+    transition: ease 0.4s;
+}
+
+div.content-card-top h4 {
+    color: #fad02c;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.content-card-bottom {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+   
+}
+
+div.content-card-bottom p {
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container .heading h1 {
+        font-size: 40px;
+    }
+
+    .content, .image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content .btn {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+}
+
+
+
+/* For footer bar */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; 
+  }
+  
+  .logo img {
+    max-width: 115px;
+  }
+  
+  .footer-container {
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 4px;
+    flex-basis: 48%;
+  }
+  
+  .footer-container h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .company-info {
+    text-align: left;
+  }
+  
+  .contact-form {
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+ 

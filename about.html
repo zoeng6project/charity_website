@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABOUT US</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_about.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+<!-- Include the header -->
+  <div id="header"></div>
+
+    <div class="container">
+        <div>
+            <div class="heading">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="wrapper">
+                <div class="content">
+                    <h2><strong>WE ARE THE *BeeKind®*</strong></h2>
+                    <p>Whether you want to donate once or give monthly, give a charitable gift, donate securities, or fundraise with friends and family, it’s easy at BeeKind®! Plus, you choose how much information to share with each charity. </p>
+                    <a href="" class="btn"> Join Us today</a>
+                </div>
+                <div class="image">
+                    <img src="img/il_600x600.5078284314_2224.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-card-wrapper">
+        <div class="content-card">
+            <div class="content-card-top">
+                <div class="content-card-top-image">
+                    <img src="img/ourmission img.png" alt="">
+                </div>
+                <h4>Our Mission</h4>
+            </div>
+            <div class="content-card-bottom">
+                <p>To inform, inspire, and connect donors and charities, and to democratize access to effective technology and education in the charitable sector.</p>
+            </div>
+        </div>
+        <div class="content-card">
+            <div class="content-card-top">
+                <div class="content-card-top-image">
+                    <img src="img/ourvision img.png" alt="">
+                </div>
+                <h4>Our Vision</h4>
+            </div>
+            <div class="content-card-bottom">
+                <p>We envision a society in which all Canadians are committed to giving and participating in the charitable sector, and in which all charities, regardless of size, have the capacity to increase their impact.</p>
+            </div>
+        </div>
+        <div class="content-card">
+            <div class="content-card-top">
+                <div class="content-card-top-image">
+                    <img src="img/full-staff-1.svg" alt="">
+                </div>
+                <h4>Members</h4>
+            </div>
+            <div class="content-card-bottom">
+                <p>ZOE NG (200591285)</p>
+            </div>
+        </div>
+    </div>
+  <!-- Include the footer -->
+  <div id="footer"></div>
+
+
+  <script>
+    // Load the header and footer HTML
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+    </script>
+</html>
